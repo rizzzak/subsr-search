@@ -1,0 +1,5 @@
+Extracts characters from the stream as unformatted input and stores them into s as a c-string, until either the extracted character is the delimiting character, or n characters have been written to s (including the terminating null character).
+
+The delimiting character is the newline character  for the first form, and delim for the second: when found in the input sequence, it is extracted from the input sequence, but discarded and not written to s.
+
+The function will also stop extracting characters if the end-of-file is reached. If this is reached prematurely (before either writing n characters or finding delim), the function sets the eofbit flag.
